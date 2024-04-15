@@ -25,7 +25,7 @@ export default function Header() {
   }, [auth])
   return (
     <div className="border-b shadow-sm sticky top-0 z-40 bg-white">
-      <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
+      <header className="flex justify-between  items-center px-3 max-w-6xl mx-auto">
         <div>
           <img
             src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
@@ -35,7 +35,7 @@ export default function Header() {
           />
         </div>
         <div>
-          <ul className="flex space-x-10">
+          <ul className="flex space-x-3 md:space-x-10">
             <li
               style={
                 pathChecking("/")
@@ -50,7 +50,7 @@ export default function Header() {
             <li
               style={
                 pathChecking("/Offers")
-                  ? { borderBottom: "3px solid red", color: "black" }
+                  ? { borderBottom: "3px solid red", color: "black", }
                   : {}
               }
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent `}
