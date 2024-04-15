@@ -84,7 +84,7 @@ export default function Profile() {
               style={
                 changeDetail ? { backgroundColor: "rgb(254, 202, 202)" } : {}
               }
-              className="w-full rounded py-2 px-4 text-xl text-gray-700 mb-6 bg-white border border-gray-300 transition ease-in-out"
+              className="w-full rounded py-2 px-4 text-[15px] md:text-xl text-gray-700 mb-6 bg-white border border-gray-300 transition ease-in-out"
               disabled={!changeDetail}
               type="text"
               id="name"
@@ -92,7 +92,7 @@ export default function Profile() {
               value={name}
             />
             <input
-              className="w-full rounded py-2 px-4 text-xl text-gray-700 mb-6 bg-white border border-gray-300 transition ease-in-out"
+              className="w-full rounded py-2 px-4 text-[15px] md:text-xl text-gray-700 mb-6 bg-white border border-gray-300 transition ease-in-out"
               type="text"
               id="email"
               value={email}
