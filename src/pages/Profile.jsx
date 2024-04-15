@@ -77,7 +77,7 @@ export default function Profile() {
   return (
     <>
       <section className="max-w-6xl mx-auto flex items-center flex-col">
-        <h1 className="text-3xl text-center font-bold">My Profile</h1>
+        <h1 className="text-lg md:text-3xl mt-4 text-center font-bold">My Profile</h1>
         <div className="w-full md:w-[50%] mt-4 px-2 py-4">
           <form>
             <input
