@@ -10,7 +10,7 @@ import {
   where,
 } from "firebase/firestore";
 import { db } from "../Firebase";
-import Spinner from "../components/Spinner";
+// import Spinner from "../components/Spinner";
 import ListingItem from "../components/ListingItem";
 import { useParams } from "react-router-dom";
 
@@ -82,7 +82,7 @@ export default function Category() {
         {params.categoryName === "rent" ? "Places for rent" : "Places for sale"}
       </h1>
       {loading ? (
-        <Spinner />
+        <p>Loading...</p>
       ) : listings && listings.length > 0 ? (
         <>
           <main>
