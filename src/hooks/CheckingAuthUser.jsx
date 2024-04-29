@@ -12,6 +12,6 @@ const [checkingStatus,setCheckingStatus]=useState(true)
       }
       setCheckingStatus(false)
     } );
-  }, []);
+  }, [loggedIn, checkingStatus]);
     return (loggedIn,checkingStatus);
 }
