@@ -10,7 +10,6 @@ import {
   where,
 } from "firebase/firestore";
 import { db } from "../Firebase";
-import Spinner from "../components/Spinner";
 import ListingItem from "../components/ListingItem";
 import { async } from "@firebase/util";
 
@@ -79,7 +78,7 @@ export default function Offers() {
     <div className="max-w-6xl mx-auto px-3">
       <h1 className="text-3xl text-center mt-6 font-bold mb-6">Offers</h1>
       {loading ? (
-        <Spinner />
+        <p>Loading...</p>
       ) : listings && listings.length > 0 ? (
         <>
           <main>

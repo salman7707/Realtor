@@ -10,7 +10,6 @@ import {
   where,
 } from "firebase/firestore";
 import { db } from "../Firebase";
-// import Spinner from "../components/Spinner";
 import ListingItem from "../components/ListingItem";
 import { useParams } from "react-router-dom";
 

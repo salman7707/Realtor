@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Spinner from "../components/Spinner";
 import { toast } from "react-toastify";
 import {
   getStorage,
@@ -211,7 +210,7 @@ export default function CreateListing() {
   }
 
   if (loading) {
-    return <Spinner />;
+    return <p>Loading...</p>;
   }
   return (
     <main className="max-w-md px-2 mx-auto">

@@ -1,7 +1,6 @@
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { useState } from "react";
 import { useEffect } from "react";
-import Spinner from "../components/Spinner";
 import { db } from "../Firebase";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -30,7 +29,7 @@ export default function Slider() {
     fetchListings();
   }, []);
   if (loading) {
-    return <Spinner />;
+    return <p>Loading...</p>;
   }
   if (listings.length === 0) {
     return <></>;
